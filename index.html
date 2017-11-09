@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Penny Pinchin</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="" content="">
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <!-- <nav>
+      <span>Penny Pinchin</span>
+      <a href="#">About</a>
+      <a href="#">Log In</a>
+    </nav> -->
+    <main>
+      <container>
+        <input type="text" id="descriptionInput" placeholder="Enter Description">
+        <input type="text" id="amountInput" placeholder="Enter Amount">
+        <select id="categoryMenu" name="category-menu">
+          <option value="restaurants">restaurants</option>
+          <option value="groceries">groceries</option>
+          <option value="rent/mortgage">rent/mortgage</option>
+          <option value="auto">auto</option>
+          <option value="entertainment">entertainment</option>
+          <option value="savings">savings</option>
+          <option value="clothing">clothing</option>
+          <option value="medical">medical</option>
+          <option value="miscellaneous">miscellaneous</option>
+        </select>
+        <button type="submit" id="addEntry">Save Entry</button>
+        <h2>Total Amount $: <span class="totalAmount"></span></h2>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Description</th>
+              <th>Category</th>
+              <th>$ Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </container>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
