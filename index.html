@@ -6,35 +6,43 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="" content="">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
-    <!-- <nav>
-      <span>Penny Pinchin</span>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Penny Pinchin</a>
       <a href="#">About</a>
       <a href="#">Log In</a>
     </nav> -->
     <main>
-      <container>
-        <input type="text" id="descriptionInput" placeholder="Enter Description">
-        <input type="text" id="amountInput" placeholder="Enter Amount">
-        <select id="categoryMenu" name="category-menu">
-          <option value="restaurants">restaurants</option>
-          <option value="groceries">groceries</option>
-          <option value="rent/mortgage">rent/mortgage</option>
-          <option value="auto">auto</option>
-          <option value="entertainment">entertainment</option>
-          <option value="savings">savings</option>
-          <option value="clothing">clothing</option>
-          <option value="medical">medical</option>
-          <option value="miscellaneous">miscellaneous</option>
-        </select>
-        <button type="submit" id="addEntry">Save Entry</button>
-        <h2>Total Amount $: <span class="totalAmount"></span></h2>
-        <table id="table">
-          <thead>
+      <div class="container-fluid">
+        <!-- <div>
+          <input type="text" placeholder="Search for...">
+        </div> -->
+        <div>
+          <input type="date" id="date">
+          <input type="text" id="descriptionInput" placeholder="Enter Description">
+          <input type="text" id="amountInput" placeholder="Enter Amount">
+          <select id="categoryMenu" name="category-menu">
+            <option value="restaurants">restaurants</option>
+            <option value="groceries">groceries</option>
+            <option value="rent/mortgage">rent/mortgage</option>
+            <option value="auto">auto</option>
+            <option value="entertainment">entertainment</option>
+            <option value="savings">savings</option>
+            <option value="clothing">clothing</option>
+            <option value="medical">medical</option>
+            <option value="miscellaneous">miscellaneous</option>
+            <option value="coffee">coffee</option>
+          </select>
+          <button type="submit" id="addEntry">Save Entry</button>
+        </div>
+        <h3>Total Amount $: <span class="totalAmount"></span></h3>
+        <table id="table" class="table">
+          <thead class="thead-dark">
             <tr>
               <th>#</th>
               <th>Description</th>
@@ -44,13 +52,16 @@
           </thead>
           <tbody>
             <tr>
+              <!-- appended in js -->
             </tr>
+            <tr><td>0</td><td>2017-11-13</td><td>Dunkin Donuts</td><td>coffee</td><td>5.44</td></tr>
           </tbody>
         </table>
-      </container>
+      </div>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
