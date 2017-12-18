@@ -2,18 +2,17 @@ $(document).ready(function(){
   var entryNumber = 0;
 
   $('button').on('click', function(){
-    // console.log('Description is: ' + description + ' and total is: $' + total);
+    console.log('Description is: ' + description + ' and total is: $' + total);
 
-    var date = document.querySelector('input[type="date"]');
     var description = $('#descriptionInput').val();
     var amount = $('#amountInput').val();
     var category = $('#categoryMenu').val();
+    var removeBtn;
 
-    console.log('this is the date: ' + date.value);
     entryNumber += 1;
-
+    console.log('what is this? ' + removeBtn);
     $('#table > tbody:last-child').prepend(
-      '<tr><td>' + entryNumber + '</td><td>' + date.value + '</td><td>' + description + '</td><td>' + category + '</td><td>' + amount + '</td><td><button class="removeEntryBtn">Delete</button></td></tr>' );
+      '<tr><td>' + entryNumber + '</td><td>' + description + '</td><td>' + category + '</td><td>' + amount + '</td></tr>' );
     $('#descriptionInput').val('');
     $('#amountInput').val('');
     total += parseFloat(amount)
