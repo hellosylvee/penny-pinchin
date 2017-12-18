@@ -1,3 +1,6 @@
+var category = ["restaurants", "groceries", "rent/mortgage", "auto", "entertainment", "savings", "clothing", "medical", "miscellaneous"];
+var total = 0;
+
 $(document).ready(function(){
   var entryNumber = 0;
 
@@ -9,6 +12,7 @@ $(document).ready(function(){
     var category = $('#categoryMenu').val();
     var removeBtn;
 
+    // console.log('this is the date: ' + date.value);
     entryNumber += 1;
     console.log('what is this? ' + removeBtn);
     $('#table > tbody:last-child').prepend(
@@ -18,15 +22,13 @@ $(document).ready(function(){
     total += parseFloat(amount)
     $('.totalAmount').html(total);
 
-    console.log('Description is: ' + description + ' and new total is: $' + total);
-    console.log('Category is: ' + category);
+    // console.log('Description is: ' + description + ' and new total is: $' + total);
+    // console.log('Category is: ' + category);
   });
 
   $('#table').on('click', 'button', function(){
-    console.log(this);
-    $(this).closest ('tr').remove();
+    $(this).closest ('tr').remove ();
   });
 
   console.log("hello");
-  console.log("this is the total " + total);
 });
